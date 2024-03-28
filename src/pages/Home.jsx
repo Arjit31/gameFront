@@ -4,9 +4,7 @@ import io from "socket.io-client";
 import "./home.css"; //imports css file into project not just the component
 //for importing into components use import styles from "./home.css"
 
-const socket = io("//url",{
-         transports: ['websocket'],
-        });
+const socket = io();
 
 export default function Home() {
   const [key, setKey] = useState("");
