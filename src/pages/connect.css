@@ -1,0 +1,28 @@
+.connect{
+    display: flex;
+    height: 100vh;
+    background-color: #1d1d1d;
+    color: #cae9ea;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 40px;
+    font-family: "Nunito", sans-serif;
+}
+.wordGroup{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    font-size: 60px;
+    font-family: "Nunito", sans-serif;
+}
+@media (max-width: 650px) {
+    .connect{
+        font-size: 20px;
+    }
+    .wordGroup{
+        font-size: 30px;
+    }
+  }

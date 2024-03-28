@@ -1,0 +1,81 @@
+.gameScreen{
+    display: flex;
+    height: 100vh;
+    background-color: #1d1d1d;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+}
+.guess{
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: 600;
+    font-size: large;
+    font-family: "Nunito", sans-serif;
+    background-color: #3c4748;
+    color: #cae9ea;
+}
+.gameForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+}
+.btn1{
+    height: 35px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #208c8c;
+    color: #cae9ea;
+    font-weight: 600;
+    font-size: large;
+    font-family: "Nunito", sans-serif;
+}
+.btn1:active { 
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+} 
+.disconnect{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 125px;
+    background-color: #273b40;
+    font-family: "Nunito", sans-serif;
+}
+.labelGroup{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    margin-bottom: 50px;
+    font-family: "Nunito", sans-serif;
+}
+.labelCount{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+label{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "Nunito", sans-serif;
+    color: #cae9ea;
+}
+input:focus::-webkit-input-placeholder {
+	color : transparent;
+}
+@media (max-width: 650px) {
+    .guess{
+        width: 300px;
+    }
+    label{
+        font-size: 20px;
+    }
+  }

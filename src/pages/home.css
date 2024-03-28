@@ -1,0 +1,64 @@
+.homeScreen{
+    display: flex;
+    height: 100vh;
+    background-color: #1d1d1d;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+}
+.keyGen{
+    font-size: 60px;
+    font-family: "Nunito", sans-serif;
+    color: #cae9ea;
+}
+.gameForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+}
+.gameKey{
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-weight: 600;
+    font-size: large;
+    font-family: "Nunito", sans-serif;
+    background-color: #3c4748;
+    color: #cae9ea;
+}
+.buttonGroup{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.btn{
+    height: 35px;
+    width: 95px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #208c8c;
+    color: #cae9ea;
+    font-weight: 600;
+    font-size: large;
+    font-family: "Nunito", sans-serif;
+}
+.btn:active { 
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+} 
+.create{
+    background-color: teal;
+}
+@media (max-width: 650px) {
+    .gameKey{
+        width: 300px;
+
+    }
+  }
