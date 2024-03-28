@@ -1,0 +1,6 @@
+services:
+  - name: your-react-app
+    buildCommand: npm install && npm run build
+    proxy:
+      - path: /socket.io
+        destination: https://gameback-6z3w.onrender.com
