@@ -17,7 +17,7 @@ export default function Game() {
   const [inputWord, setInputWord] = useState("");
   const [ready, setReady] = useState(false);
   const [otherUser, setOtherUser] = useState("");
-  const [count, setCount] = useState(-2);
+  const [count, setCount] = useState(-1);
 
   useEffect(() => {
     
@@ -27,8 +27,8 @@ export default function Game() {
       if(param != socket.id)
       {
         setOtherUser(param);
-        console.log("connected via key: "+param);
-        console.log(socket.id);
+        // console.log("connected via key: "+param);
+        // console.log(socket.id);
         socket.emit("connectAgain", [keyParam, socket.id]);
         // console.log(otherUser);
       }
@@ -49,14 +49,14 @@ export default function Game() {
       console.log(otherUser);
       socket.emit("sendReady", [inputWord, otherUser]);
       socket.on("otherReady", (word) => {
-        console.log(word);
-        console.log(ready);
+        // console.log(word);
+        // console.log(ready);
         socket.emit("bothReady", [inputWord, word, otherUser]);
         // socket.off("otherReady");
       });
       socket.on("wordsEntered", ([ w1, w2 ]) => {
-        console.log(w1);
-        console.log(w2);
+        // console.log(w1);
+        // console.log(w2);
         setWord1(w1.toLowerCase());
         setWord2(w2.toLowerCase());
         setReady(false);
@@ -70,7 +70,7 @@ export default function Game() {
       socket.off('bothReady');
       socket.off('sendReady');
       // socket.on('disconnect');
-      console.log(count);
+      // console.log(count);
       if(word1 && word1 == word2)
       {
         let scoreURL = "/connect?";
