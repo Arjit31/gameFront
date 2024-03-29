@@ -44,9 +44,9 @@ export default function Game() {
   }, []);
 
   useEffect(() => {
-    console.log(ready);
+    // console.log(ready);
     if(ready){
-      console.log(otherUser);
+      // console.log(otherUser);
       socket.emit("sendReady", [inputWord, otherUser]);
       socket.on("otherReady", (word) => {
         // console.log(word);
