@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 import "./game.css";
 
-const socket = io();
+const socket = io("https://gameback-6z3w.onrender.com");
 
 export default function Game() {
   const location = useLocation();
