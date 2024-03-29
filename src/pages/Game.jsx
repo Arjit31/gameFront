@@ -29,6 +29,7 @@ export default function Game() {
         setOtherUser(param);
         console.log("connected via key: "+param);
         console.log(socket.id);
+        socket.emit("connectAgain", [keyParam, socket.id]);
         // console.log(otherUser);
       }
     });
